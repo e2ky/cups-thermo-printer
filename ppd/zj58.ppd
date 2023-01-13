@@ -1,6 +1,6 @@
 *PPD-Adobe: "4.3"
 *%%%% PPD file for ZJ-58 with CUPS.
-*%%%% Created by the CUPS PPD Compiler CUPS v2.2.1.
+*%%%% Created by the CUPS PPD Compiler CUPS v2.4.2.
 *FormatVersion: "4.3"
 *FileVersion: "1.1"
 *LanguageVersion: English
@@ -21,36 +21,40 @@
 *TTRasterizer: Type42
 *% Driver-defined attributes...
 *1284DeviceID: "MFG:Zijiang;CMD:Zijiang;MDL:ZJ-58;CLS:PRINTER;"
-*cupsVersion: 2.2
+*cupsVersion: 2.4
 *cupsModelNumber: 58
 *cupsManualCopies: True
 *cupsFilter: "application/vnd.cups-raster 0 rastertozj"
 *cupsLanguages: "en ru"
 *OpenUI *PageSize/Media Size: PickOne
 *OrderDependency: 10 AnySetup *PageSize
-*DefaultPageSize: X48MMY210MM
-*PageSize X48MMY210MM/58mm x 210mm: "<</PageSize[136 595]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
-*PageSize X48MMY297MM/58mm x 297mm: "<</PageSize[136 842]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
-*PageSize X48MMY3276MM/58mm x 3276mm: "<</PageSize[136 9286]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*DefaultPageSize: 47.98x105.13mm.Fullbleed
+*PageSize 47.98x105.13mm.Fullbleed/58mm x 105mm: "<</PageSize[136 298]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize 47.98x209.9mm.Fullbleed/58mm x 210mm: "<</PageSize[136 595]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize 47.98x297.04mm.Fullbleed/58mm x 297mm: "<</PageSize[136 842]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageSize 47.98x3275.89mm.Fullbleed/58mm x 3276mm: "<</PageSize[136 9286]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
 *CloseUI: *PageSize
 *OpenUI *PageRegion/Media Size: PickOne
 *OrderDependency: 10 AnySetup *PageRegion
-*DefaultPageRegion: X48MMY210MM
-*PageRegion X48MMY210MM/58mm x 210mm: "<</PageSize[164 595]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
-*PageRegion X48MMY297MM/58mm x 297mm: "<</PageSize[164 842]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
-*PageRegion X48MMY3276MM/58mm x 3276mm: "<</PageSize[164 9286]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*DefaultPageRegion: 47.98x105.13mm.Fullbleed
+*PageRegion 47.98x105.13mm.Fullbleed/58mm x 105mm: "<</PageSize[136 298]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion 47.98x209.9mm.Fullbleed/58mm x 210mm: "<</PageSize[164 595]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion 47.98x297.04mm.Fullbleed/58mm x 297mm: "<</PageSize[164 842]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*PageRegion 47.98x3275.89mm.Fullbleed/58mm x 3276mm: "<</PageSize[164 9286]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
 *CloseUI: *PageRegion
-*DefaultImageableArea: X48MMY210MM
-*ImageableArea X48MMY210MM/58mm x 210mm: "0 0 136 595"
-*ImageableArea X48MMY297MM/58mm x 297mm: "0 0 136 842"
-*ImageableArea X48MMY3276MM/58mm x 3276mm: "0 0 136 9286"
-*DefaultPaperDimension: X48MMY210MM
-*PaperDimension X48MMY210MM/58mm x 210mm: "136 595"
-*PaperDimension X48MMY297MM/58mm x 297mm: "136 842"
-*PaperDimension X48MMY3276MM/58mm x 3276mm: "136 9286"
+*DefaultImageableArea: 47.98x105.13mm.Fullbleed
+*ImageableArea 47.98x105.13mm.Fullbleed/58mm x 105mm: "0 0 136 298"
+*ImageableArea 47.98x209.9mm.Fullbleed/58mm x 210mm: "0 0 136 595"
+*ImageableArea 47.98x297.04mm.Fullbleed/58mm x 297mm: "0 0 136 842"
+*ImageableArea 47.98x3275.89mm.Fullbleed/58mm x 3276mm: "0 0 136 9286"
+*DefaultPaperDimension: 47.98x105.13mm.Fullbleed
+*PaperDimension 47.98x105.13mm.Fullbleed/58mm x 105mm: "136 298"
+*PaperDimension 47.98x209.9mm.Fullbleed/58mm x 210mm: "136 595"
+*PaperDimension 47.98x297.04mm.Fullbleed/58mm x 297mm: "136 842"
+*PaperDimension 47.98x3275.89mm.Fullbleed/58mm x 3276mm: "136 9286"
 *OpenGroup: CutGroup/Cut Options
 *OpenUI *FeedDist/Feed distance after print: PickOne
-*OrderDependency: 0 AnySetup *FeedDist
+*OrderDependency: 15 AnySetup *FeedDist
 *DefaultFeedDist: 2feed9mm
 *FeedDist 0feed3mm/feed 3mm: ""
 *FeedDist 1feed6mm/feed 6mm: ""
@@ -68,30 +72,30 @@
 *FeedDist 13feed42mm/feed 42mm: ""
 *FeedDist 14feed45mm/feed 45mm: ""
 *CloseUI: *FeedDist
-*OpenUI *BlankSpace/Blank space at page's end: PickOne
-*OrderDependency: 0 AnySetup *BlankSpace
-*DefaultBlankSpace: 1NoPrint
-*BlankSpace 0Print/Print: ""
-*BlankSpace 1NoPrint/Do not print: ""
-*CloseUI: *BlankSpace
 *OpenUI *Cutting/Cutting: PickOne
-*OrderDependency: 0 AnySetup *Cutting
-*DefaultCutting: 1CutAtTheEndOfPage
+*OrderDependency: 3 AnySetup *Cutting
+*DefaultCutting: 0NoCutting
 *Cutting 0NoCutting/No cutting: ""
 *Cutting 1CutAtTheEndOfPage/Cut at every page: ""
 *Cutting 2CutAtTheEndOfJob/Cut at every job: ""
 *CloseUI: *Cutting
+*OpenUI *BlankSpace/Blank spaceat page's end: PickOne
+*OrderDependency: 2 AnySetup *BlankSpace
+*DefaultBlankSpace: 1NoPrint
+*BlankSpace 0Print/Print: ""
+*BlankSpace 1NoPrint/Do not print: ""
+*CloseUI: *BlankSpace
 *CloseGroup: CutGroup
 *OpenGroup: *CashDrawerGroup/Cash Drawer Control
 *OpenUI *CashDrawer1Setting/Cash Drawer 1: PickOne
-*OrderDependency: 0 AnySetup *CashDrawer1Setting
+*OrderDependency: 3 AnySetup *CashDrawer1Setting
 *DefaultCashDrawer1Setting: 0NotCashDrawer1
 *CashDrawer1Setting 0NotCashDrawer1/Not Cash Drawer 1: ""
 *CashDrawer1Setting 1NotCashDrawer1BeforePrinting/Cash Drawer 1 Before Printing: ""
 *CashDrawer1Setting 2NotCashDrawer1BeforePrinting/Cash Drawer 1 After Printing: ""
 *CloseUI: *CashDrawer1Setting
 *OpenUI *CashDrawer2Setting/Cash Drawer 2: PickOne
-*OrderDependency: 0 AnySetup *CashDrawer2Setting
+*OrderDependency: 3 AnySetup *CashDrawer2Setting
 *DefaultCashDrawer2Setting: 0NotCashDrawer2
 *CashDrawer2Setting 0NotCashDrawer2/Not Cash Drawer 2: ""
 *CashDrawer2Setting 1NotCashDrawer2BeforePrinting/Cash Drawer 2 Before Printing: ""
@@ -103,9 +107,10 @@
 *ru.Translation ShortNickName/ZJ-58: ""
 *ru.Translation NickName/Zijiang ZJ-58: ""
 *ru.Translation PageSize/Размер бумаги: ""
-*ru.PageSize X48MMY210MM/58x210мм: ""
-*ru.PageSize X48MMY297MM/58x297мм: ""
-*ru.PageSize X48MMY3276MM/58x3276мм: ""
+*ru.PageSize 47.98x105.13mm.Fullbleed/58x105мм: ""
+*ru.PageSize 47.98x209.9mm.Fullbleed/58x210мм: ""
+*ru.PageSize 47.98x297.04mm.Fullbleed/58x297мм: ""
+*ru.PageSize 47.98x3275.89mm.Fullbleed/58x3276мм: ""
 *ru.Translation CutGroup/Опции обрезки: ""
 *ru.Translation FeedDist/Прокрутка после печати: ""
 *ru.FeedDist 0feed3mm/feed 3mm: ""
@@ -123,13 +128,13 @@
 *ru.FeedDist 12feed39mm/feed 39mm: ""
 *ru.FeedDist 13feed42mm/feed 42mm: ""
 *ru.FeedDist 14feed45mm/feed 45mm: ""
-*ru.Translation BlankSpace/Blank space at page's end: ""
-*ru.BlankSpace 0Print/Печатать: ""
-*ru.BlankSpace 1NoPrint/Не печатать: ""
 *ru.Translation Cutting/Обрезка: ""
 *ru.Cutting 0NoCutting/Без обрезки: ""
 *ru.Cutting 1CutAtTheEndOfPage/Обрезка по странице: ""
 *ru.Cutting 2CutAtTheEndOfJob/Обрезка по документу: ""
+*ru.Translation BlankSpace/Blank spaceat page's end: ""
+*ru.BlankSpace 0Print/Печатать: ""
+*ru.BlankSpace 1NoPrint/Не печатать: ""
 *ru.Translation *CashDrawerGroup/Денежный ящик: ""
 *ru.Translation CashDrawer1Setting/Денежный ящик 1: ""
 *ru.CashDrawer1Setting 0NotCashDrawer1/Not Cash Drawer 1: ""
@@ -140,4 +145,4 @@
 *ru.CashDrawer2Setting 1NotCashDrawer2BeforePrinting/Открывать перед печатью: ""
 *ru.CashDrawer2Setting 2NotCashDrawer2BeforePrinting/Открывать после печати: ""
 *DefaultFont: Courier
-*% End of zj58.ppd, 06369 bytes.
+*% End of zj58.ppd, 07042 bytes.

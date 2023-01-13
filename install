@@ -4,7 +4,7 @@ echo "Compiling..."
 make
 
 echo "Stopping CUPS"
-/etc/init.d/cups stop
+systemctl stop cups.service
 
 echo "Compile drivers"
 ppdc *.drv
@@ -12,12 +12,14 @@ ppdc *.drv
 echo "Copying files"
 cp rastertozj /usr/lib/cups/filter/
 mkdir -p /usr/share/cups/model/zjiang
-cp ppd/zj58.ppd /usr/share/cups/model/zjiang/
-cp ppd/zj80.ppd /usr/share/cups/model/zjiang/
+cp -v ppd/zj58.ppd /usr/share/cups/model/zjiang/
+echo "Copied zjg8.ppd"
+cp -v ppd/zj80.ppd /usr/share/cups/model/zjiang/
+echo "Copied zj80.ppd"
 cd /usr/lib/cups/filter
 chmod 755 rastertozj
 chown root:root rastertozj
 cd -
 
 echo "Starting CUPS"
-/etc/init.d/cups start
+systemctl start cups.service
